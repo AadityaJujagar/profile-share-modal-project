@@ -3,10 +3,72 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Profile Share Modal</title>
+    <title>Profiles Modal | Aaditya</title>
+    <link
+      rel="shortcut icon"
+      href="./user assets/nav logo A.jpg"
+      type="image/x-icon"
+    />
     <link rel="stylesheet" href="style.css" />
   </head>
   <body>
+    <div class="wrapper">
+      <div class="circle1"></div>
+      <div class="circle2"></div>
+
+      <div class="card">
+        <div class="user-img">
+          <img src="./user assets/aaditya-pic.png" alt="user image" />
+        </div>
+        <div class="user-name">
+          <h2>Aaditya Jujagar</h2>
+        </div>
+        <div class="designation">
+          <h3>Full Stack Web-Developer</h3>
+          <h3>Machine Learning Enthusiast</h3>
+        </div>
+        <button onclick="modalOpen()" class="share-btn card-btn">
+          <i class="fa-solid fa-share"></i>
+          <div>View and Share My Profiles</div>
+        </button>
+      </div>
+
+      <div class="modal-section">
+        <div class="modal-header">
+          <h1>View and Share My Profiles</h1>
+          <div>
+            <i onclick="modalClose()" class="fa-solid fa-xmark close"></i>
+          </div>
+        </div>
+        <div>
+          <h3>View and Share Via</h3>
+          <div class="icons">
+            <a href="#" class="icon" id="linkedin">
+              <i class="fa-brands fa-linkedin-in"></i>
+            </a>
+            <a href="#" class="icon" id="github">
+              <i class="fa-brands fa-github"></i>
+            </a>
+            <a href="#" class="icon" id="email">
+              <i class="fa-regular fa-envelope"></i>
+            </a>
+            <a href="#" class="icon" id="phone-call">
+              <i class="fa-solid fa-phone-volume"></i>
+            </a>
+            <a href="#" class="icon" id="instagram">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div class="overlay" onclick="modalClose()"></div>
+
+    <script
+      src="https://kit.fontawesome.com/58a810656e.js"
+      crossorigin="anonymous"
+    ></script>
     <script src="script.js"></script>
   </body>
 </html>
